@@ -1,0 +1,83 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #343a40;
+}
+
+/* Баннер */
+.custom-banner {
+    background-color: #198754;
+    border-radius: 12px;
+    min-height: 140px;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+.banner-logo img {
+    max-height: 80px;
+}
+
+.banner-text {
+    max-width: 100%;
+}
+
+.banner-text h1, .banner-text p {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.banner-spacer {
+    width: 100px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .custom-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-logo {
+        margin-bottom: 10px;
+    }
+
+    .banner-spacer {
+        display: none;
+    }
+}
+
+.site-footer {
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.site-footer a:hover {
+    color: #198754;
+    text-decoration: underline;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-buttons .btn {
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+}
+
+.category-buttons .btn.active,
+.category-buttons .btn:hover {
+    background-color: #198754;
+    color: #fff;
+    border-color: #198754;
+}
