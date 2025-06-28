@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Головна — Зоомагазин{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Левая колонка (категорії) -->
+    <aside class="col-md-2">
+        <h5>Категорії</h5>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">Собаки</a></li>
+            <li class="list-group-item"><a href="#">Кішки</a></li>
+            <li class="list-group-item"><a href="#">Гризуни</a></li>
+            <li class="list-group-item"><a href="#">Птахи</a></li>
+            <li class="list-group-item"><a href="#">Рибки</a></li>
+        </ul>
+    </aside>
+
+    <!-- Центральная колонка -->
+    <section class="col-md-8">
+        <h2>Ласкаво просимо!</h2>
+        <p>Оберіть категорію для перегляду товарів або скористайтеся пошуком.</p>
+    </section>
+
+    <!-- Правая колонка (блог) -->
+    <aside class="col-md-2">
+        <h5>Блог</h5>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">Як обрати корм для собаки</a></li>
+            <li class="list-group-item"><a href="#">Догляд за кішками влітку</a></li>
+            <li class="list-group-item"><a href="#">Нові іграшки для гризунів</a></li>
+        </ul>
+    </aside>
+</div>
+{% endblock %}
